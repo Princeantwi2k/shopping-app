@@ -20,7 +20,7 @@ export default function App() {
 
 const completeTask = (index)=>{
   let itermsCopy = [...tasksitems];
-  itermsCopy.splice([index,1])
+  itermsCopy.splice(index) 
   settasksitems(itermsCopy)
 }
 
@@ -29,7 +29,7 @@ const completeTask = (index)=>{
     <View style={styles.container}>
     {/* todays task */}
     <View style={styles.taskwrapper}>
-      <Text style={styles.section}>Today's tasks</Text>
+      <Text style={styles.section}>My Task for the day</Text>
     </View>
 
 <View style={styles.item}>
